@@ -40,7 +40,7 @@ class MtToWordPress
           xml['wp'].wxr_version   '1.2'
           mt.each_blog_post do |entry|
             xml.item do
-              parsedDate = DateTime.strptime(entry[:date], "%m/%d/%Y %H:%M:%S %p")
+              parsedDate = DateTime.strptime(entry[:date].to_s, "%m/%d/%Y %H:%M:%S %p")
               content = entry[:body]
               content = content + stalker
               if entry[:extended_body]
