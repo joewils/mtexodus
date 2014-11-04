@@ -1,0 +1,18 @@
+<p>Mount Exodus needs to your TypePad hosting url, your website domain url, and your TypePad data export dump (<a href="http://help.typepad.com/import_export.html" target="_new">instructions</a>).  We use the two URL's to rewrite your image references.  We use the data to build a tracking profile for the NSA and the CIA. Don't be shy, give it up. </p>
+<form action='/upload' enctype="multipart/form-data" method='POST'>
+  <input type="hidden" name="plan" value="{{plan}}" />
+  <div class="form-group">
+    <label for="typepad_url">TypePad URL</label>
+    <input type="text" class="form-control" name="typepad_url" placeholder="http://foobar.typepad.com" />
+  </div>
+  <div class="form-group">
+    <label for="site_url">Website URL</label>
+    <input type="text" class="form-control" name="site_url" placeholder="http://www.foobar.com" />
+  </div>
+  <div class="form-group">
+    <label for="mtexport">TypePad Export File</label>
+    <input type="file" name="mtexport" />
+  </div>
+  <input type="submit" value="Transform" >
+  <p>&nbsp;</p>
+</form>

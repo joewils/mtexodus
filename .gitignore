@@ -1,0 +1,5 @@
+# Ignore RSS
+rss/*.rss
+
+# Ignore Uploads
+uploads/*.dump

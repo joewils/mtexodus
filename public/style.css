@@ -1,0 +1,18 @@
+.price {
+  text-align: center;
+}
+.price h1 {
+  font-size: 3em;
+}
+.price h2 {
+  font-size: 2em;
+}
+.price h3 {
+  font-size: 1em;
+}
+
+.images {
+  overflow:scroll;
+  height: 400px;
+  border: 1px solid magenta;
+}
