@@ -1,5 +1,5 @@
 # http://www.sixapart.com/movabletype/docs/mtimport.html
-
+# https://github.com/mchung/ruby-mtexport
 #
 # Parses file format exported by MovableType and Typepad blogs
 #
