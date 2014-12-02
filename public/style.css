@@ -16,3 +16,13 @@
   height: 400px;
   border: 1px solid magenta;
 }
+
+.rss {
+  overflow:scroll;
+  height: 400px;
+  width:100%;
+  border: 1px solid magenta;
+}
+
+.m3 {margin:3px;}
+.p3 {padding:3px;}

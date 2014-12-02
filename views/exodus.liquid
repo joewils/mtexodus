@@ -7,16 +7,19 @@
 
       <div class="row">
         <div class="col-lg-12">
-          <h1>Step 1: Transform</h1>
+          <h1>Step 1: Transform Data</h1>
           <p>We successfully parsed your Movable Type data file and produced an RSS feed compatible with WordPress' import utility.  There are a couple of manual steps that need your attention:</p>
 
-          <h1>Step 2: Save</h1>
+          <h1>Step 2: Download RSS</h1>
           <p>Save your <a href="/rss/{{feed_id}}">WordPress RSS</a> import file (link triggers a download).</p>
 
-          <h1>Step 3: Import</h1>
+          <h1>Step 3: Import Content</h1>
           <p>Import your content using the official <a href="https://wordpress.org/plugins/wordpress-importer/" target="_new">WordPress Importer</a> plugin. (link opens in new window)</p> 
+          <textarea class="rss">
+{{rss}}
+          </textarea>
         
-          <h1>Step 4: Download Images</h1>
+          <h1>Step 4: Rescue Images</h1>
           <p>Download the following images to your local computer. I suggest using a download utility such as <a href="https://addons.mozilla.org/en-US/firefox/addon/downthemall/" target="_new">DownThemAll! (Firefox)</a> or <a href="https://itunes.apple.com/us/app/easyget/id483544597" target="_new">EasyGet</a> (Mac OSX).</p>
           <ol class="images">
           {% for image in images %}
@@ -24,23 +27,8 @@
           {% endfor %}
           </ol>
 
-          <h1>Step 5: Rename Images</h1>
-          <p>Append the following extension to all of your images: <em>.jpg</em></p>
-
-          <h1>Step 6: Upload Images</h1>
-          <p>Upload the image archive to your WordPress server. Use the following folder path: <em>{{image_dir}}</em></p>
-
-          <h1>Step 7: Money</h1>
-          {% if plan == 'personal' %}
-            <p>Pay $29 via PayPal.</p>
-            {% include 'paypal29' %}
-          {% elsif plan == 'professional' %}
-            <p>Pay $49 via PayPal.</p>
-            {% include 'paypal49' %}
-          {% else %}
-            <p>Pay $69 via PayPal.</p>
-            {% include 'paypal69' %}
-          {% endif %}
+          <h1>Step 5: Upload Images</h1>
+          <p>Upload the image archive to your WordPress server using following folder path: <strong class="bg-info p3">{{image_dir}}</strong></p>
           
         </div>
       </div>
